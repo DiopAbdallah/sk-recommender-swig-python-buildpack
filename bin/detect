@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo "Fake pocketsphinx for swig dependency"
+exit 0

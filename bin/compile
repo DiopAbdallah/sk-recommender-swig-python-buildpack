@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+echo "-----> Uninstalling pockersphinx"
+# change to the the BUILD_DIR ($1)
+cd $1
+pip uninstall -y pockersphinx
+
+echo "-----> Installing pocketsphinx-for-swig-dependency"
+# download the binary
+curl https://raw.githubusercontent.com/OriHoch/textract/fake-pocketsphinx-for-swig-dependency/provision/fake-pocketsphinx.sh | bash -
