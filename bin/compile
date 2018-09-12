@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
-echo "-----> Installing python tools for pip"
-apt-get install python-setuptools python-dev build-essential
-easy_install pip
-pip install --upgrade virtualenv
-
 echo "-----> Uninstalling pockersphinx"
 # change to the the BUILD_DIR ($1)
 cd $1
